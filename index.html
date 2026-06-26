@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automotive CAN Bus Firewall Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>🛡️ GuardAuto: CAN Bus Firewall</h1>
+        <p class="subtitle">Simulating Electronic Control Unit (ECU) traffic protection inside a vehicle network.</p>
+        
+        <div class="control-panel">
+            <button id="send-clean-btn">🚗 Send Normal Traffic</button>
+            <button id="send-attack-btn" class="danger-btn">🚨 Inject Malicious CAN Packet</button>
+            <button id="clear-btn">🧹 Clear Logs</button>
+        </div>
+
+        <div class="network-monitor">
+            <h3>Live Network Packet Log</h3>
+            <div id="log-display" class="log-box">
+                <p class="system-msg">[SYSTEM] Firewall Online. Monitoring internal vehicle network...</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
